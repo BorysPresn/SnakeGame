@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    height: 100vh;
     background: linear-gradient(to bottom, #77b75f, #568c3b);
 }
 h1{
