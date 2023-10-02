@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pixel', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #77b75f, #568c3b);
+}
+h1{
+    margin-bottom: 10px;
+    color: #225c07;
+    font-size: 50px;
+}
+body p{
+    color: #fff;
+}
+.game {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.field-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0, 0, 15px #32a200;
+}
+.game-field {
+    display: grid;
+    background-color: #39b400b3;
+    border: 3px solid #225c07;
+}
+.cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #069d00;
+}
+.snake {
+    background-color: darkgreen;
+}
+.food {
+    background-color: gold;
+}
+
+.side-panel {
+    padding: 10px;
+}
+.score {
+    font-size: 20px;
+    color: #fff;
+}
+.level {
+    font-size: 20px;
+    color: #fff;
+}
+#banner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: #1232037d;
+    height: 0;
+}
+#banner button {
+    padding: 5px 12px;
+    border: none;
+    background-color: greenyellow;
+    border-radius: 5px;
+    box-shadow: 0 0 10px green;
+    cursor: pointer;
+    transition: all .5s;
+}
+#banner.active {
+    display: block;
+    height: fit-content;
+}
